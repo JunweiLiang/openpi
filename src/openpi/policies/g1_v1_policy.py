@@ -71,8 +71,10 @@ class G1V1Inputs(transforms.DataTransformFn):
 
         # Pad actions to the model action dimension. Keep this for your own dataset.
         # Actions are only available during training.
-        if "actions" in data:
-            inputs["actions"] = data["actions"]
+        #if "actions" in data:
+        #    inputs["actions"] = data["actions"]
+        if "action" in data:
+            inputs["action"] = data["action"]
 
         # Pass the prompt (aka language instruction) to the model.
         # Keep this for your own dataset (but modify the key if the instruction is not
@@ -97,4 +99,5 @@ class G1V1Outputs(transforms.DataTransformFn):
         # dimension, we need to now parse out the correct number of actions in the return dict.
         # For Libero, we only return the first 7 actions (since the rest is padding).
         # For your own dataset, replace `7` with the action dimension of your dataset.
-        return {"actions": np.asarray(data["actions"][:, :23])}
+        #return {"actions": np.asarray(data["actions"][:, :23])}
+        return {"action": np.asarray(data["action"][:, :23])}
