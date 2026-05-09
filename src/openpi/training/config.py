@@ -1012,7 +1012,7 @@ _CONFIGS = [
         name="pi05_g1_v1", #zshtodo
         model=pi0_config.Pi0Config(pi05=True, action_horizon=50, discrete_state_input=True),
         data=LeRobotG1V1DataConfig(
-            repo_id="piwbc_pick_up_object_from_ground",
+            repo_id="junweiliang/piwbc_pick_up_object_from_ground",
             base_config=DataConfig(prompt_from_task=True),
             extra_delta_transform=True,
         ),
