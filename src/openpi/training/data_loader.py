@@ -120,7 +120,8 @@ class FakeDataset(Dataset):
 
         return {
             **observation.to_dict(),
-            "actions": action,
+            #"actions": action,
+            "action": action,
         }
 
     def __len__(self) -> int:
