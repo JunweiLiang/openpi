@@ -87,4 +87,7 @@
 
     # 训练！
 
+        1. 计算数据集stats
+
+            junweil@office-precognition:~/projects/wbc_manipulation/openpi$ uv run scripts/compute_norm_stats.py --config-name pi05_g1_v1
 ```
