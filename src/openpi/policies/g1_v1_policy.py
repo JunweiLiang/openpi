@@ -73,8 +73,6 @@ class G1V1Inputs(transforms.DataTransformFn):
         # Actions are only available during training.
         #if "actions" in data:
         #    inputs["actions"] = data["actions"]
-        print(data.keys())
-        sys.exit()
         if "action" in data:
             inputs["action"] = data["action"]
 

@@ -384,7 +384,7 @@ class LeRobotG1V1DataConfig(DataConfigFactory):
                         "observation/image": "observation.images.cam_high",
                         #"observation/wrist_image": "wrist_image",
                         "observation/state": "observation.state",
-                        "actions": "action",
+                        "action": "action",
                         "prompt": "prompt",
                     }
                 )
