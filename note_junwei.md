@@ -69,7 +69,7 @@
         2.1 修改添加 src/openpi/policies/g1_v1_policy.py
         2.2 修改 training/config.py
         2.3 注意 openpi默认"actions"，但是我们的数据是"action"
-            # 要改好几个文件，包括 transforms.py, data_loader.py, compute_norm_stats.py
+            # 要改好几个文件，包括 transforms.py, data_loader.py, compute_norm_stats.py, training/config.py
 
 
         # 下载模型，需要google cloud
