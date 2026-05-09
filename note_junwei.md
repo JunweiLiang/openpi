@@ -63,6 +63,8 @@
                 # State and Action slices are now perfectly 1:1
                 # New 23D vector: Arms(14) + Waist(3) + Triggers(2) + Loco(4)
 
+                columns in the dataset: ['observation.state', 'action', 'timestamp', 'frame_index', 'episode_index', 'index', 'task_index']
+
 
         2.1 修改添加 src/openpi/policies/g1_v1_policy.py
         2.2 修改 training/config.py
